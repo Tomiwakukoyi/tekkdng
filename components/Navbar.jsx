@@ -36,23 +36,23 @@ const Navbar = () => {
             </button>
             <div className="flex flex-col items-end space-y-2 mt-5">
               <Link href="/">
-                <span className=" font-medium  hover:text-gray-300">Home</span>
+                <span className=" font-medium  hover:text-gray-600">Home</span>
               </Link>
               <Link href="/about">
-                <span className=" font-medium  hover:text-gray-300">About</span>
+                <span className=" font-medium  hover:text-gray-600">About</span>
               </Link>
               <Link href="/research">
-                <span className=" font-medium  hover:text-gray-300">
+                <span className=" font-medium  hover:text-gray-600">
                   Research
                 </span>
               </Link>
               <Link href="/extra">
-                <span className=" font-medium  hover:text-gray-300">
+                <span className=" font-medium  hover:text-gray-600">
                   Publications
                 </span>
               </Link>
               <Link href="/contact">
-                <span className=" font-medium  hover:text-gray-300">
+                <span className=" font-medium  hover:text-gray-600">
                   Contact Us
                 </span>
               </Link>
@@ -64,21 +64,21 @@ const Navbar = () => {
       {/* Nav items for SM and Up Screens */}
       <div className={`hidden sm:flex sm:space-x-3 md:space-x-5`}>
         <Link href="/">
-          <span className=" font-medium  hover:text-gray-300">Home</span>
+          <span className=" font-medium  hover:text-gray-600">Home</span>
         </Link>
         <Link href="/about">
-          <span className=" font-medium  hover:text-gray-300">About</span>
+          <span className=" font-medium  hover:text-gray-600">About</span>
         </Link>
         <Link href="/research">
-          <span className=" font-medium  hover:text-gray-300">Research</span>
+          <span className=" font-medium  hover:text-gray-600">Research</span>
         </Link>
         <Link href="/extra">
-          <span className=" font-medium  hover:text-gray-300">
+          <span className=" font-medium  hover:text-gray-600">
             Publications
           </span>
         </Link>
         <Link href="/contact">
-          <span className=" font-medium  hover:text-gray-300">Contact Us</span>
+          <span className=" font-medium  hover:text-gray-600">Contact Us</span>
         </Link>
       </div>
     </div>
