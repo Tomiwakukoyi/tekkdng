@@ -1,10 +1,86 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
+import DragHandleIcon from "@mui/icons-material/DragHandle";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
-    <div>
+    <div className=" absolute py-5 pt-6 px-10 md:px-20 flex items-center justify-between w-screen">
       {/* Logo */}
-      {/* Nav items */}
+      <div>
+        <span className=" text-md font-semibold font-sans">Tekkd NG</span>
+      </div>
+
+      {/* Mobile Menu Toggle Button */}
+
+      <button
+        className="sm:hidden  focus:outline-none"
+        onClick={toggleMobileMenu}
+      >
+        {isMobileMenuOpen ? <></> : <DragHandleIcon fontSize="medium" />}
+      </button>
+
+      {/* Nav items for Mobile Screens */}
+      {isMobileMenuOpen && (
+        <div className="sm:hidden bg-white h-screen top-0 left-0  w-screen absolute">
+          <div className="flex flex-col absolute items-end right-0 pt-6 pr-10">
+            <button className="" onClick={toggleMobileMenu}>
+              <CloseIcon />
+            </button>
+            <div className="flex flex-col items-end space-y-2 mt-5">
+              <Link href="/">
+                <span className=" font-medium  hover:text-gray-300">Home</span>
+              </Link>
+              <Link href="/about">
+                <span className=" font-medium  hover:text-gray-300">About</span>
+              </Link>
+              <Link href="/research">
+                <span className=" font-medium  hover:text-gray-300">
+                  Research
+                </span>
+              </Link>
+              <Link href="/extra">
+                <span className=" font-medium  hover:text-gray-300">
+                  Publications
+                </span>
+              </Link>
+              <Link href="/contact">
+                <span className=" font-medium  hover:text-gray-300">
+                  Contact Us
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Nav items for SM and Up Screens */}
+      <div className={`hidden sm:flex sm:space-x-3 md:space-x-5`}>
+        <Link href="/">
+          <span className=" font-medium  hover:text-gray-300">Home</span>
+        </Link>
+        <Link href="/about">
+          <span className=" font-medium  hover:text-gray-300">About</span>
+        </Link>
+        <Link href="/research">
+          <span className=" font-medium  hover:text-gray-300">Research</span>
+        </Link>
+        <Link href="/extra">
+          <span className=" font-medium  hover:text-gray-300">
+            Publications
+          </span>
+        </Link>
+        <Link href="/contact">
+          <span className=" font-medium  hover:text-gray-300">Contact Us</span>
+        </Link>
+      </div>
     </div>
   );
 };
