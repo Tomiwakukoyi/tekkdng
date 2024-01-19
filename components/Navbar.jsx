@@ -14,9 +14,11 @@ const Navbar = () => {
   return (
     <div className=" absolute py-5 pt-6 px-10 md:px-20 flex items-center justify-between w-screen">
       {/* Logo */}
-      <div>
-        <span className=" text-md font-semibold font-sans">Tekkd NG</span>
-      </div>
+      <Link href="/">
+        <div>
+          <span className=" text-md font-semibold font-sans">Tekkd NG</span>
+        </div>
+      </Link>
 
       {/* Mobile Menu Toggle Button */}
 

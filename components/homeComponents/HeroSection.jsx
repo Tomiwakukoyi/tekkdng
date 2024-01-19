@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -14,6 +15,12 @@ const HeroSection = () => {
           industries using digital technology as the foundation.
         </p>
       </div>
+
+      <Link href="/about">
+        <button className=" bg-gray-950 w-28 h-10 rounded-lg mt-5 text-white text-sm hover:bg-gray-900">
+          About Us
+        </button>
+      </Link>
     </div>
   );
 };
