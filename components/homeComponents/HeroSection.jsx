@@ -18,7 +18,7 @@ const HeroSection = () => {
       </div>
 
       <Link href="/about">
-        <button className=" bg-gray-900 w-28 md:w-32 h-10 rounded-lg mt-5 text-white text-sm hover:bg-gray-950">
+        <button className=" bg-gray-900 w-28 sm:w-28 h-10 rounded-lg mt-5 text-white text-sm hover:bg-gray-950">
           About Us
         </button>
       </Link>
@@ -27,7 +27,7 @@ const HeroSection = () => {
           src="/images/hero.webp"
           width={400}
           height={400}
-          className=" md:w-[1050px] sm:h-[280px] sm:w-[600px] md:h-[350px] rounded-3xl"
+          className="  sm:h-[500px] sm:w-[600px] md:w-[80vw]  rounded-3xl"
         />
       </div>
     </div>
