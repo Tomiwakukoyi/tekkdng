@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Socials from "./Socials";
 
 const HeroSection = () => {
   return (
@@ -22,6 +23,7 @@ const HeroSection = () => {
           About Us
         </button>
       </Link>
+      <Socials />
       <div className="">
         <Image
           src="/images/hero.webp"
