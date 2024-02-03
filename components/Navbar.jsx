@@ -10,6 +10,9 @@ const Navbar = () => {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+  const autoCloseMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <div className="   py-5 pt-6 px-10 md:px-20 flex items-center justify-between w-screen">
@@ -38,27 +41,42 @@ const Navbar = () => {
             </button>
             <div className="flex flex-col items-end space-y-2 mt-5">
               <Link href="/">
-                <span className=" font-medium text-sm  hover:text-gray-600">
+                <span
+                  onClick={autoCloseMenu}
+                  className=" font-medium text-sm  hover:text-gray-600"
+                >
                   Home
                 </span>
               </Link>
               <Link href="/about">
-                <span className=" font-medium text-sm  hover:text-gray-600">
+                <span
+                  onClick={autoCloseMenu}
+                  className=" font-medium text-sm  hover:text-gray-600"
+                >
                   About
                 </span>
               </Link>
               <Link href="/research">
-                <span className=" font-medium text-sm  hover:text-gray-600">
+                <span
+                  onClick={autoCloseMenu}
+                  className=" font-medium text-sm  hover:text-gray-600"
+                >
                   Research
                 </span>
               </Link>
               <Link href="/extra">
-                <span className=" font-medium text-sm  hover:text-gray-600">
+                <span
+                  onClick={autoCloseMenu}
+                  className=" font-medium text-sm  hover:text-gray-600"
+                >
                   Publications
                 </span>
               </Link>
               <Link href="/contact">
-                <span className=" font-medium text-sm  hover:text-gray-600">
+                <span
+                  onClick={autoCloseMenu}
+                  className=" font-medium text-sm  hover:text-gray-600"
+                >
                   Contact Us
                 </span>
               </Link>
