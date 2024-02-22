@@ -3,17 +3,17 @@ import React from "react";
 const About = () => {
   return (
     <div className="flex flex-col items-center justify-center mt-8">
-      <span className="font-serif text-3xl md:text-3xl lg:text-4xl font-medium text-center py-6 pb-8 ">
+      <span className="font-serif text-3xl md:text-3xl lg:text-4xl font-medium text-center py-6 pb-5 ">
         About
       </span>
-      <div className="flex flex-col">
-        <span>
-          Tekkd Solutions is a comprehensive professional services company
+      <div className="flex flex-col items-start justify-start">
+        <span className=" text-center flex mx-auto text-sm w-[80%]">
+          Tekkd Solutions is a comprehensive IT & Digital services company
           catering to a diverse clientele, ranging from different industries. We
           provide a wide range of services to help you with your project, from
           start to finish.
         </span>
-        <span>Our Services</span>
+        <span className=" text-sm font-bold">Our Services</span>
         <span>
           Project Management: Our experienced team of project managers will
           ensure that your project is delivered on time and on budget. We use
