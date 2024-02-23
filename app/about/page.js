@@ -1,3 +1,4 @@
+import OurServices from "@/components/about/OurServices";
 import React from "react";
 
 const About = () => {
@@ -13,7 +14,8 @@ const About = () => {
           provide a wide range of services to help you with your project, from
           start to finish.
         </span>
-        <span className=" text-sm font-bold">Our Services</span>
+        <span className=" text-sm font-bold ml-5">Our Services</span>
+        <OurServices />
         <span>
           Project Management: Our experienced team of project managers will
           ensure that your project is delivered on time and on budget. We use
