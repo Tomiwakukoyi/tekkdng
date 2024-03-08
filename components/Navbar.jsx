@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="   py-5 pt-6 px-10 md:px-20 flex items-center justify-between w-screen">
+    <div className="py-5 pt-6 px-10 md:px-20 flex items-center justify-between w-screen">
       {/* Logo */}
       <Link href="/">
         <div>
