@@ -1,4 +1,6 @@
 import OurServices from "@/components/about/OurServices";
+import MeetTheTeam from "@/components/team/MeetTheTeam";
+import employees from "@/public/data/employees";
 import servicesData from "@/public/data/servicesData";
 
 const About = () => {
@@ -14,13 +16,24 @@ const About = () => {
           provide a wide range of services to help you with your project, from
           start to finish.
         </span>
-        <span className=" text-sm md:text-base font-bold flex mx-auto mt-5 md:mt-10">Our Services</span>
-       
-       <div className="flex gap-3 items-center justify-center mx-auto flex-wrap mt-3 w-[70%]">
-         {servicesData.map((service, index) => (
-          <OurServices key={index} {...service} />
+        <span className=" text-sm md:text-base font-bold flex mx-auto mt-5 md:mt-10">
+          Our Services
+        </span>
+
+        <div className="flex gap-8 items-center justify-center mx-auto flex-wrap mt-3 w-[70%]">
+          {servicesData.map((service, index) => (
+            <OurServices key={index} {...service} />
+          ))}
+        </div>
+      </div>
+
+      <span className=" text-sm md:text-base font-bold flex mx-auto mt-5 md:mt-10">
+        Meet The Team
+      </span>
+      <div className="flex gap-5 mx-auto flex-wrap mt-3 w-[70%]">
+        {employees.map((employees, index) => (
+          <MeetTheTeam key={index} {...employees} />
         ))}
-       </div>
       </div>
     </div>
   );
