@@ -1,4 +1,4 @@
-// contentData.js
+
 const contentData = [
   {
     header: "Project Management",
