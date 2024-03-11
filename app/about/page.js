@@ -27,7 +27,7 @@ const About = () => {
         </div>
       </div>
 
-      <span className=" text-sm md:text-base font-bold flex mx-auto mt-5 md:mt-10">
+      <span className=" text-sm md:text-base font-bold flex mx-auto mt-8 md:mt-10">
         Meet The Team
       </span>
       <div className="flex gap-5 mx-auto flex-wrap mt-3 w-[70%]">

@@ -13,18 +13,18 @@ const Socials = () => {
 
   return (
     <div className="flex text-gray-600 gap-3">
-      <FaTwitter
+      <FaTwitter className=" cursor-pointer" 
         onClick={() => handleNavigate("https://twitter.com/tommyk_dev")}
       />
-      <FaLinkedin
+      <FaLinkedin className=" cursor-pointer"
         onClick={() =>
           handleNavigate("https://www.linkedin.com/company/optimindng/")
         }
       />
-      <FaInstagram
+      <FaInstagram className=" cursor-pointer"
         onClick={() => handleNavigate("https://instagram.com/tekkd.ng")}
       />
-      <SiGmail
+      <SiGmail className=" cursor-pointer"
         onClick={() => handleNavigate("mailto:tomiwakukoyi07@gmail.com")}
       />
     </div>

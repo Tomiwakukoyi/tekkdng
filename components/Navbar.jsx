@@ -56,14 +56,14 @@ const Navbar = () => {
                   About
                 </span>
               </Link>
-              <Link href="/research">
+              {/* <Link href="/research">
                 <span
                   onClick={autoCloseMenu}
                   className=" font-medium text-sm  hover:text-gray-600"
                 >
                   Research
                 </span>
-              </Link>
+              </Link> */}
               <Link href="/extra">
                 <span
                   onClick={autoCloseMenu}
@@ -72,7 +72,7 @@ const Navbar = () => {
                   Publications
                 </span>
               </Link>
-              <Link href="/contact">
+              <Link href="/contactus">
                 <span
                   onClick={autoCloseMenu}
                   className=" font-medium text-sm  hover:text-gray-600"
@@ -101,7 +101,7 @@ const Navbar = () => {
             Publications
           </span>
         </Link>
-        <Link href="/contact">
+        <Link href="/contactus">
           <span className=" font-medium  hover:text-gray-600">Contact Us</span>
         </Link>
       </div>
