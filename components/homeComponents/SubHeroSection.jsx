@@ -4,7 +4,7 @@ import contentData from "@/public/data/descData";
 
 const SubHeroSection = () => {
   return (
-    <div className=" font-serif flex flex-col items-center justify-center gap-8 mt-28">
+    <div className=" font-serif flex flex-col items-center justify-center gap-8 mt-24">
       <div className="flex flex-col items-center justify-center gap-2">
         <span className="text-4xl h-6 text-gray-400">*</span>
         <h1 className=" font-medium w-300 text-center text-2xl sm:text-3xl  ">

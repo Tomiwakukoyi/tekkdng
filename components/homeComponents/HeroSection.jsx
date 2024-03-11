@@ -24,7 +24,7 @@ const HeroSection = () => {
         </button>
       </Link>
       <Socials />
-      <div className="">
+      <div className=" mt-5">
         <Image
           src="/images/hero.webp"
           width={400}

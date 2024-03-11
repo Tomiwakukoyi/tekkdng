@@ -21,7 +21,7 @@ const OurServices = ({ heading, description, image }) => {
       <Image src={`/images/${image}`} width={300} height={300} className="p-0.5" />
 
       <div className="flex flex-col items-center justify-center mt-3 gap-2">
-        <span className="font-medium">{heading}</span>
+        <span className=" font-semibold">{heading}</span>
         <p className="text-center">{description}</p>
       </div>
     </animated.div>
