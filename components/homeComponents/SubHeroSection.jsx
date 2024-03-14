@@ -16,12 +16,13 @@ const SubHeroSection = () => {
         clientele, ranging from homeowners to commercial developers.
       </p>
 
-      <div className=" flex flex-wrap items-center justify-center gap-8 mt-4">
+      <div className=" flex flex-wrap  items-center justify-center gap-8 mt-4">
         {contentData.map((content, index) => (
           <Desc
             key={index}
             header={content.header}
             spanContent={content.spanContent}
+            image={content.image}
           />
         ))}
       </div>
