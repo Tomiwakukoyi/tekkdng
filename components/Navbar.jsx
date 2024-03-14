@@ -56,14 +56,14 @@ const Navbar = () => {
                   About
                 </span>
               </Link>
-              {/* <Link href="/research">
+              <Link href="/portfolio">
                 <span
                   onClick={autoCloseMenu}
                   className=" font-medium text-sm  hover:text-gray-600"
                 >
-                  Research
+                  Portfolio
                 </span>
-              </Link> */}
+              </Link>
               <Link href="/extra">
                 <span
                   onClick={autoCloseMenu}
@@ -93,10 +93,10 @@ const Navbar = () => {
         <Link href="/about">
           <span className=" font-medium  hover:text-gray-600">About</span>
         </Link>
-        <Link href="/research">
-          <span className=" font-medium  hover:text-gray-600">Research</span>
+        <Link href="/portfolio">
+          <span className=" font-medium  hover:text-gray-600">Portfolio</span>
         </Link>
-        <Link href="/extra">
+        <Link href="/publications">
           <span className=" font-medium  hover:text-gray-600">
             Publications
           </span>
