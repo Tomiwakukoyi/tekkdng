@@ -6,18 +6,6 @@ const employees = [
         "Founder and Senior Software Developer/CTO",
         picture:"tk.png"
     },
-    {
-      name: "Mr. Kukoyi Tomiwa",
-      position:
-        "Founder and Senior Software Developer/CTO",
-        picture:"tk.png"
-    },
-    {
-      name: "Mr. Kukoyi Tomiwa",
-      position:
-        "Founder and Senior Software Developer/CTO",
-        picture:"tk.png"
-    },
    
   ];
   
