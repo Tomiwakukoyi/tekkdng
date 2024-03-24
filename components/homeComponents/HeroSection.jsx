@@ -26,10 +26,10 @@ const HeroSection = () => {
       <Socials />
       <div className=" mt-5">
         <Image
-          src="/images/hero.webp"
+          src="/images/banner.jpg"
           width={400}
           height={400}
-          className="  sm:h-[500px] sm:w-[600px] md:w-[80vw]  rounded-3xl"
+          className="  sm:h-[500px] sm:w-[600px] md:w-full  rounded-3xl"
         />
       </div>
     </div>
