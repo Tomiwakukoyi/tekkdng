@@ -13,7 +13,7 @@ const SubHeroSection = () => {
       </div>
       <p className="  text-gray-600 text-center w-[360px] sm:w-[480px] md:w-[550px] ">
         Our comprehensive suite of professional services caters to a diverse
-        clientele, ranging from homeowners to commercial developers.
+        clientele, ranging from government to private individuals.
       </p>
 
       <div className=" flex flex-wrap items-center justify-center gap-8 mt-4">

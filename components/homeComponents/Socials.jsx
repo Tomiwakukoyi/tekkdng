@@ -8,25 +8,39 @@ const Socials = () => {
   const router = useRouter();
 
   const handleNavigate = (url) => {
-    router.push(url);
+    router.push(url, "_blank"); // Add "_blank" target to open in new tab/window
   };
 
   return (
     <div className="flex text-gray-600 gap-3">
-      <FaTwitter className=" cursor-pointer" 
-        onClick={() => handleNavigate("https://twitter.com/tommyk_dev")}
-      />
-      <FaLinkedin className=" cursor-pointer"
-        onClick={() =>
-          handleNavigate("https://www.linkedin.com/company/optimindng/")
-        }
-      />
-      <FaInstagram className=" cursor-pointer"
-        onClick={() => handleNavigate("https://instagram.com/tekkd.ng")}
-      />
-      <SiGmail className=" cursor-pointer"
-        onClick={() => handleNavigate("mailto:tomiwakukoyi07@gmail.com")}
-      />
+      <a
+        href="https://twitter.com/tommyk_dev"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaTwitter />
+      </a>
+      <a
+        href="https://www.linkedin.com/company/optimindng/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaLinkedin />
+      </a>
+      <a
+        href="https://instagram.com/tekkd.ng"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaInstagram />
+      </a>
+      <a
+        href="mailto:tomiwakukoyi07@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <SiGmail />
+      </a>
     </div>
   );
 };
