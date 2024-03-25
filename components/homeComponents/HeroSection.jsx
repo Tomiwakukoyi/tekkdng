@@ -24,12 +24,20 @@ const HeroSection = () => {
         </button>
       </Link>
       <Socials />
-      <div className=" mt-5">
+      <div className=" mt-5 sm:hidden">
         <Image
-          src="/images/banner.jpg"
-          width={380}
-          height={380}
-          className=" mx-auto  sm:h-[500px] sm:w-full px-3  rounded-3xl"
+          src="/images/banner3.png"
+          width={400}
+          height={0}
+          className=" mx-auto h-[50%] sm:w-full px-3  rounded-3xl"
+        />
+      </div>
+      <div className=" mt-5 hidden sm:block ">
+        <Image
+          src="/images/banner2.jpg"
+          width={1000}
+          height={0}
+          className=" mx-auto sm:w-full px-3  rounded-3xl"
         />
       </div>
     </div>
