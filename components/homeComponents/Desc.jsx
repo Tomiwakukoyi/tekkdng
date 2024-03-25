@@ -9,8 +9,8 @@ const Desc = ({ header, spanContent, image }) => {
         height={300}
         className="p-0.5 rounded-3xl shadow-md mb-8 hover:w-[303px] mx-auto "
       />
-      <h1 className="text font-medium">{header}</h1>
-      <span className=" text-[14px] w-[370px] text-gray-600">
+      <h1 className="text font-medium mx-auto pb-2">{header}</h1>
+      <span className=" text-[14px] w-[350px] mx-auto text-gray-600 text-center">
         {spanContent}
       </span>
     </div>
