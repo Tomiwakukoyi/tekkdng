@@ -3,7 +3,7 @@ const employees = [
     {
       name: "Mr. Kukoyi Tomiwa",
       position:
-        "Founder and Senior Software Developer/CTO",
+        "Senior Software Developer/CTO",
         picture:"tk.png"
     },
    
