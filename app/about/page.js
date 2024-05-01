@@ -17,7 +17,7 @@ const About = () => {
           start to finish.
         </span>
         <span className=" text-sm md:text-base font-bold flex mx-auto mt-5 md:mt-10">
-          Our Services
+          Our Services``
         </span>
 
         <div className="flex gap-8 items-center justify-center mx-auto flex-wrap mt-3 w-[70%]">
