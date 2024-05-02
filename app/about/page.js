@@ -13,11 +13,11 @@ const About = () => {
         <span className=" text-center flex mx-auto text-sm md:text-base w-[80%]">
           Tekkd Solutions is a comprehensive IT & Digital services company
           catering to a diverse clientele, ranging from different industries. We
-          provide a wide range of services to help you with your project, from
+          provide a wide range of services to help you with your projects, from
           start to finish.
         </span>
         <span className=" text-sm md:text-base font-bold flex mx-auto mt-5 md:mt-10">
-          Our Services
+          Our Services``
         </span>
 
         <div className="flex gap-8 items-center justify-center mx-auto flex-wrap mt-3 w-[70%]">
