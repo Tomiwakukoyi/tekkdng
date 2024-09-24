@@ -37,7 +37,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="w-screen  flex flex-col gap-3 items-center justify-center mt-14 md:mt-24">
+    <div className="w-screen flex flex-col gap-3 items-center justify-center mt-20 md:mt-24">
       <motion.div
         className="flex flex-col gap-3"
         initial="hidden"
@@ -53,7 +53,6 @@ const HeroSection = () => {
           Tekkd prioritizes creating solutions to different spheres and
           industries using digital technology as the foundation.
         </p>
-
       </motion.div>
 
       <motion.div initial="hidden" animate="visible" variants={buttonVariant}>
@@ -74,37 +73,37 @@ const HeroSection = () => {
         animate="visible"
         variants={imageVariant}
       >
-        <Image
+        {/* <Image
           src="/images/tech.jpg"
           width={400}
           height={400}
-          className=" rounded-3xl md:w-[600px]"
+          className="rounded-3xl md:w-[600px]"
+        /> */}
 
-      </div>
+        <div className="mt-5 hidden sm:block">
+          <Image
+            src="/images/banner2.jpg"
+            width={1000}
+            height={0}
+            className="mx-auto sm:w-full px-3 rounded-3xl"
+          />
+        </div>
+      </motion.div>
 
-      <Link href="/about">
-        <button className=" bg-gray-900 w-28 sm:w-28 h-10 rounded-lg mt-5 text-white text-sm hover:bg-gray-950">
+      {/* <Link href="/about">
+        <button className="bg-gray-900 w-28 sm:w-28 h-10 rounded-lg mt-5 text-white text-sm hover:bg-gray-950">
           About Us
         </button>
       </Link>
-      <Socials />
-      <div className=" mt-5 sm:hidden">
+      <Socials /> */}
+      <div className="mt-5 sm:hidden">
         <Image
           src="/images/banner3.png"
           width={400}
           height={0}
-          className=" mx-auto h-[50%] sm:w-full px-3  rounded-3xl"
+          className="mx-auto h-[50%] sm:w-full px-3 rounded-3xl"
         />
       </div>
-      <div className=" mt-5 hidden sm:block ">
-        <Image
-          src="/images/banner2.jpg"
-          width={1000}
-          height={0}
-          className=" mx-auto sm:w-full px-3  rounded-3xl"
-
-        />
-      </motion.div>
     </div>
   );
 };
