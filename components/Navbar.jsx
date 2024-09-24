@@ -53,7 +53,7 @@ const Navbar = () => {
             <button className="" onClick={toggleMobileMenu}>
               <CloseIcon />
             </button>
-            <div className="flex flex-col items-end space-y-2 mt-5">
+            <div className="flex flex-col items-end space-y-8 mt-10">
               <Link href="/">
                 <span onClick={autoCloseMenu} className={getLinkClasses("/")}>
                   Home

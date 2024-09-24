@@ -53,6 +53,7 @@ const HeroSection = () => {
           Tekkd prioritizes creating solutions to different spheres and
           industries using digital technology as the foundation.
         </p>
+
       </motion.div>
 
       <motion.div initial="hidden" animate="visible" variants={buttonVariant}>
@@ -78,6 +79,30 @@ const HeroSection = () => {
           width={400}
           height={400}
           className=" rounded-3xl md:w-[600px]"
+
+      </div>
+
+      <Link href="/about">
+        <button className=" bg-gray-900 w-28 sm:w-28 h-10 rounded-lg mt-5 text-white text-sm hover:bg-gray-950">
+          About Us
+        </button>
+      </Link>
+      <Socials />
+      <div className=" mt-5 sm:hidden">
+        <Image
+          src="/images/banner3.png"
+          width={400}
+          height={0}
+          className=" mx-auto h-[50%] sm:w-full px-3  rounded-3xl"
+        />
+      </div>
+      <div className=" mt-5 hidden sm:block ">
+        <Image
+          src="/images/banner2.jpg"
+          width={1000}
+          height={0}
+          className=" mx-auto sm:w-full px-3  rounded-3xl"
+
         />
       </motion.div>
     </div>
