@@ -57,7 +57,7 @@ const HeroSection = () => {
 
       <motion.div initial="hidden" animate="visible" variants={buttonVariant}>
         <Link href="/about">
-          <button className="bg-gray-900 w-28 sm:w-28 h-10 rounded-lg mt-5 text-white text-sm hover:bg-gray-950">
+          <button className="bg-gray-900 w-28 sm:w-28 h-10 rounded-lg mt-5 text-white text-sm hover:bg-gray-700">
             About Us
           </button>
         </Link>

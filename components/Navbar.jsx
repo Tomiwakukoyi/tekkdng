@@ -23,7 +23,7 @@ const Navbar = () => {
       relative flex items-center justify-center text-gray-600 font-medium transition duration-300 pl-4
       ${isActive ? "text-gray-900" : ""} 
       before:absolute before:bottom-[-6px] before:left-0 
-      before:h-[2px] before:bg-blue-200 before:w-0 before:transition-all before:duration-500 
+      before:h-[2px] before:bg-[#17a2b8] before:w-0 before:transition-all before:duration-500 
       hover:before:w-[130%] 
       ${isActive ? "before:w-[130%]" : ""}
     `;
