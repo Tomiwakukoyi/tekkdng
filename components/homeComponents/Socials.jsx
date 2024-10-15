@@ -18,28 +18,28 @@ const Socials = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaTwitter />
+        <FaTwitter fontSize={22} />
       </a>
       <a
         href="https://www.linkedin.com/company/optimindng/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaLinkedin />
+        <FaLinkedin fontSize={22} />
       </a>
       <a
         href="https://instagram.com/tekkd.ng"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaInstagram />
+        <FaInstagram fontSize={22} />
       </a>
       <a
         href="mailto:tomiwakukoyi07@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <SiGmail />
+        <SiGmail fontSize={22} />
       </a>
     </div>
   );

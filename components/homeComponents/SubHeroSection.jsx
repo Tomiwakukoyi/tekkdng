@@ -43,7 +43,6 @@ const SubHeroSection = () => {
       >
         <span className="text-4xl h-6 text-gray-400">*</span>
 
-
         <h1 className=" font-medium w-300 text-center text-2xl sm:text-3xl  ">
           A passion for digital technology solutions to world problems
         </h1>
@@ -62,13 +61,12 @@ const SubHeroSection = () => {
 
       {/* Content section */}
       <motion.div
-        className="flex flex-wrap items-center justify-center gap-8 mt-4"
+        className="flex flex-wrap items-center justify-center gap-8 mt-4 md:w-[75%] pb-10"
         initial="hidden"
         animate={isInView ? "visible" : "hidden"} // Trigger animation when in view
         variants={contentVariant}
       >
-      
-        <div className=" flex flex-wrap items-center justify-center gap-8 mt-4">
+        <div className=" flex flex-wrap items-center justify-center gap-14 mt-4">
           {contentData.map((content, index) => (
             <Desc
               key={index}
