@@ -1,11 +1,12 @@
 "use client";
+
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
 import CloseIcon from "@mui/icons-material/Close";
 
-const Navbar = () => {
+export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
@@ -23,7 +24,7 @@ const Navbar = () => {
       relative flex items-center justify-center text-gray-600 font-medium transition duration-300 pl-4
       ${isActive ? "text-gray-900" : ""} 
       before:absolute before:bottom-[-6px] before:left-0 
-      before:h-[2px] before:bg-[#17a2b8] before:w-0 before:transition-all before:duration-500 
+      before:h-[2px] before:bg-gray-600 before:w-0 before:transition-all before:duration-500 
       hover:before:w-[130%] 
       ${isActive ? "before:w-[130%]" : ""}
     `;
@@ -34,7 +35,7 @@ const Navbar = () => {
       {/* Logo */}
       <Link href="/">
         <div>
-          <span className="text-md font-semibold font-sans">Tekkd NG</span>
+          <span className="text-lg font-semibold font-sans">Tekkd NG</span>
         </div>
       </Link>
 
@@ -75,13 +76,13 @@ const Navbar = () => {
                   Portfolio
                 </span>
               </Link>
-              <Link href="/contactus">
-                <span
+              <Link href="/consultation">
+                <button
                   onClick={autoCloseMenu}
-                  className={getLinkClasses("/contactus")}
+                  className="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300"
                 >
-                  Contact Us
-                </span>
+                  Book a Consultation
+                </button>
               </Link>
             </div>
           </div>
@@ -99,12 +100,12 @@ const Navbar = () => {
         <Link href="/portfolio">
           <span className={getLinkClasses("/portfolio")}>Portfolio</span>
         </Link>
-        <Link href="/contactus">
-          <span className={getLinkClasses("/contactus")}>Contact Us</span>
+        <Link href="/consultation">
+          <button className="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300">
+            Get in touch
+          </button>
         </Link>
       </div>
     </div>
   );
-};
-
-export default Navbar;
+}

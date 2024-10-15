@@ -6,11 +6,10 @@ import Image from "next/image";
 import Socials from "./Socials";
 import { motion } from "framer-motion";
 
-const HeroSection = () => {
-  // Animation variants for different elements
+export default function Component() {
   const textVariant = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.7, delay: 0.2 } },
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.7, delay: 0.2 } },
   };
 
   const buttonVariant = {
@@ -37,75 +36,61 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="w-screen flex flex-col gap-3 items-center justify-center mt-20 md:mt-24">
-      <motion.div
-        className="flex flex-col gap-3"
-        initial="hidden"
-        animate="visible"
-        variants={textVariant}
-      >
-        <div className="w-80 md:w-[550px] flex items-center justify-center ml-5">
-          <motion.span className="font-serif text-2xl md:text-3xl lg:text-4xl font-medium text-center">
-            Innovation and sustainability through digital technology
-          </motion.span>
-        </div>
-        <p className="w-[350px] md:w-[540px] text-gray-600 text-center text-sm ml-0 md:ml-6">
-          Tekkd prioritizes creating solutions to different spheres and
-          industries using digital technology as the foundation.
-        </p>
-      </motion.div>
-
-      <motion.div initial="hidden" animate="visible" variants={buttonVariant}>
-        <Link href="/about">
-          <button className="bg-gray-900 w-28 sm:w-28 h-10 rounded-lg mt-5 text-white text-sm hover:bg-gray-700">
-            About Us
-          </button>
-        </Link>
-      </motion.div>
-
-      <motion.div initial="hidden" animate="visible" variants={socialsVariant}>
-        <Socials />
-      </motion.div>
-
-      <motion.div
-        className="mt-5"
-        initial="hidden"
-        animate="visible"
-        variants={imageVariant}
-      >
-        {/* <Image
-          src="/images/tech.jpg"
-          width={400}
-          height={400}
-          className="rounded-3xl md:w-[600px]"
-        /> */}
-
-        <div className="mt-5 hidden sm:block">
+    <div className="relative w-full min-h-screen flex items-center justify-center bg-gray-50">
+      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between z-10">
+        <motion.div
+          className="lg:w-1/2 mb-10 lg:mb-0"
+          initial="hidden"
+          animate="visible"
+          variants={textVariant}
+        >
+          <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-center md:text-start">
+            Innovation and Sustainability through Digital Technology
+          </h1>
+          <p className="text-lg text-gray-600 mb-8">
+            Tekkd prioritizes creating solutions across various industries by
+            leveraging digital technology as the foundation. With AI at the
+            heart of our innovation, we’re not just adapting to the future—
+            <span className="font-bold">we’re shaping it.</span>
+          </p>
+          {/* --------------- */}
+          <div className="flex flex-col items-center md:items-start justify-center">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={buttonVariant}
+            >
+              <Link href="/consultation">
+                <button className="bg-gray-900 text-white hover:bg-gray-700 text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-lg text-lg font-semibold transition-colors">
+                  Book a Consultation Now
+                </button>
+              </Link>
+            </motion.div>
+            <motion.div
+              className="mt-8"
+              initial="hidden"
+              animate="visible"
+              variants={socialsVariant}
+            >
+              <Socials />
+            </motion.div>
+          </div>
+        </motion.div>
+        <motion.div
+          className="lg:w-1/2"
+          initial="hidden"
+          animate="visible"
+          variants={imageVariant}
+        >
           <Image
-            src="/images/banner2.jpg"
-            width={1000}
-            height={0}
-            className="mx-auto sm:w-full px-3 rounded-3xl"
+            src="/images/banner3.png"
+            width={600}
+            height={400}
+            alt="Hero image"
+            className="rounded-lg shadow-lg"
           />
-        </div>
-      </motion.div>
-
-      {/* <Link href="/about">
-        <button className="bg-gray-900 w-28 sm:w-28 h-10 rounded-lg mt-5 text-white text-sm hover:bg-gray-950">
-          About Us
-        </button>
-      </Link>
-      <Socials /> */}
-      <div className="mt-5 sm:hidden">
-        <Image
-          src="/images/banner3.png"
-          width={400}
-          height={0}
-          className="mx-auto h-[50%] sm:w-full px-3 rounded-3xl"
-        />
+        </motion.div>
       </div>
     </div>
   );
-};
-
-export default HeroSection;
+}

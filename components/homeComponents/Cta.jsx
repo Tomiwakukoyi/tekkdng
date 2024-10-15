@@ -1,15 +1,31 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Cta = () => {
+  const buttonVariant = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.5, delay: 0.4 },
+    },
+  };
   return (
-    <Link href="/contactus">
-      <button className="flex mx-auto mt-5 bg-gray-900 hover:bg-slate-700 px-4 py-2 rounded-md">
-        <span className=" font-medium text-sm text-gray-200">
-          Contact Us
-        </span>
-      </button>
-    </Link>
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={buttonVariant}
+      className="flex flex-col items-center justify-center"
+    >
+      <Link href="/consultation">
+        <button className="bg-gray-900 text-white hover:bg-gray-700 text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-lg text-lg font-semibold transition-colors">
+          Book a Consultation Now
+        </button>
+      </Link>
+    </motion.div>
   );
 };
 
