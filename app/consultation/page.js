@@ -71,10 +71,10 @@ export default function ConsultationPage() {
 
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        "service_ci81eym",
+        "template_znho00m",
         form.current,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        "HV78EyH-GOW3Jms7n"
       )
       .then(
         () => {
