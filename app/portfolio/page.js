@@ -28,7 +28,7 @@ const Portfolio = () => {
           can't disclose names because of NDA but we have listed the sectors
           where our clientele stretches across. We are not limited to these
           fields, these are simply our major client areas. Do reach out to us
-          <Link href="/contactus">
+          <Link href="/consultation">
             <span className="text-red-400"> here </span>
           </Link>
           to find out more.
