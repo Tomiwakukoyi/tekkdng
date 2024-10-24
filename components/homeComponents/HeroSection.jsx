@@ -36,7 +36,7 @@ export default function Component() {
   };
 
   return (
-    <div className="relative w-full min-h-screen flex items-center justify-center bg-gray-50">
+    <div className="relative w-full min-h-screen flex items-center justify-center bg-gray-50 pt-40 md:pt-20">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between z-10">
         <motion.div
           className="lg:w-1/2 mb-10 lg:mb-0"
