@@ -8,7 +8,7 @@ const employees = [
   {
     name: "Mr. Kaiyewu Tomiwa",
     position: "Chief Operations Officer",
-    picture: "tommy.jpg",
+    picture: "tommy2.jpg",
   },
 ];
 
