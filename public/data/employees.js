@@ -2,8 +2,13 @@
 const employees = [
   {
     name: "Mr. Kukoyi Tomiwa",
-    position: "MD/CEO",
+    position: "Founder & CTO",
     picture: "tk.png",
+  },
+  {
+    name: "Mr. Kaiyewu Tomiwa",
+    position: "Chief Operations Officer",
+    picture: "tommy.jpg",
   },
 ];
 
