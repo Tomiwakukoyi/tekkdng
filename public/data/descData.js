@@ -25,12 +25,6 @@ const contentData = [
   },
 
   // {
-  //   header: "Digital/Social Media Marketing",
-  //   spanContent:
-  //     "Elevate your brand with our comprehensive digital and social media marketing services. We help you reach and engage your target audience, driving growth and brand awareness.",
-  //   image: "digital.avif",
-  // },
-  // {
   //   header: "Hardware Supply and Maintenance",
   //   spanContent:
   //     "Ensuring the reliability and performance of your hardware infrastructure. From supply to maintenance, our services guarantee the smooth operation of your hardware systems.",
