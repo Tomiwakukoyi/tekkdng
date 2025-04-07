@@ -3,7 +3,7 @@ const employees = [
   {
     name: "Mr. Kukoyi Tomiwa",
     position: "CEO/CTO",
-    picture: "Tomi.png",
+    picture: "Tomi.PNG",
   },
   {
     name: "Mr. Kaiyewu Tomiwa",
@@ -13,7 +13,7 @@ const employees = [
   {
     name: "Mr. Adeleke Seun",
     position: "Chief Operations Officer",
-    picture: "seun.JPG",
+    picture: "seun.jpg",
   },
 ];
 

@@ -6,23 +6,23 @@ const contentData = [
     image: "softwaredev.avif",
   },
   {
-    header: "Project Management",
+    header: "Social Media and Digital Marketing",
     spanContent:
       "Bringing your projects to life with efficient planning, organization, and execution. Our experienced team ensures successful project delivery from start to finish.",
-    image: "pm.jpg",
+    image: "digital.avif",
+  },
+  {
+    header: "Strategy & Business Consulting",
+    spanContent:
+      "Harness the power of social platforms and online strategies to grow your brand, engage your audience, and drive real results.",
+    image: "consulting.jpg",
   },
   // {
-  //   header: "Consulting",
+  //   header: "AI & Machine Learning Solutions",
   //   spanContent:
-  //     "Providing expert advice and strategic guidance to help you make informed decisions. Our consulting services cover a wide range of areas to meet your business needs.",
-  //   image: "consulting.jpg",
+  //     "Transforming your business with custom AI and machine learning solutions. From predictive analytics and computer vision to natural language processing and automation, we develop tailored AI systems that solve real business challenges.",
+  //   image: "robot.jpg",
   // },
-  {
-    header: "AI & Machine Learning Solutions",
-    spanContent:
-      "Transforming your business with custom AI and machine learning solutions. From predictive analytics and computer vision to natural language processing and automation, we develop tailored AI systems that solve real business challenges.",
-    image: "robot.jpg",
-  },
 
   // {
   //   header: "Hardware Supply and Maintenance",
