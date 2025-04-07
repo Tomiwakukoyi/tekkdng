@@ -3,6 +3,7 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import { FaPhone } from "react-icons/fa";
 
 const Socials = () => {
   const router = useRouter();
@@ -20,13 +21,13 @@ const Socials = () => {
       >
         <FaTwitter fontSize={22} />
       </a> */}
-      <a
+      {/* <a
         href="https://www.linkedin.com/company/optimindng/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <FaLinkedin fontSize={22} />
-      </a>
+      </a> */}
       <a
         href="https://instagram.com/tekkd.ng"
         target="_blank"
@@ -35,11 +36,14 @@ const Socials = () => {
         <FaInstagram fontSize={22} />
       </a>
       <a
-        href="mailto:tomiwakukoyi07@gmail.com"
+        href="mailto:tekkdng@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >
         <SiGmail fontSize={22} />
+      </a>
+      <a href="tel:+2347083325053" target="_blank" rel="noopener noreferrer">
+        <FaPhone fontSize={22} />
       </a>
     </div>
   );

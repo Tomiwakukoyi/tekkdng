@@ -1,4 +1,4 @@
-import { Phone, Email, LocationOn, Language } from '@mui/icons-material';
+import { Phone, Email, LocationOn, Language } from "@mui/icons-material";
 
 const contactInfo = [
   {
@@ -8,7 +8,7 @@ const contactInfo = [
   },
   {
     name: "Email",
-    spanContent: "Tekkdsolutions@gmail.com",
+    spanContent: "tekkdng@gmail.com",
     icon: <Email />,
   },
   {
@@ -18,7 +18,7 @@ const contactInfo = [
   },
   {
     name: "Website",
-    spanContent: "www.tekkdng.com",
+    spanContent: "https://www.tekkdsolutions.com.ng/",
     icon: <Language />,
   },
 ];
