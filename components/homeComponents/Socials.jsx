@@ -36,7 +36,7 @@ const Socials = () => {
         <FaInstagram fontSize={22} />
       </a>
       <a
-        href="mailto:tekkdng@gmail.com"
+        href="mailto:tekkdsolutions@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >
