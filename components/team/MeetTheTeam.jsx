@@ -34,7 +34,7 @@ const MeetTheTeam = ({ picture, name, position }) => {
             alt={name}
             fill
             style={{ objectFit: "cover" }}
-            className="transition-all duration-300"
+            className="transition-all duration-300 pt-5"
           />
         </animated.div>
       </div>
