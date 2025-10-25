@@ -162,7 +162,7 @@ export default function Portfolio() {
                           // Add your project detail page link here
                           console.log("Navigate to project:", project.id);
                         }}
-                        className="group rounded-lg overflow-hidden border border-border bg-card hover:border-accent/50 transition-all duration-300 cursor-pointer block"
+                        className="group rounded-lg overflow-hidden border border-border bg-card hover:border-accent/50 transition-all duration-300 cursor-pointer block h-fit"
                       >
                         <div className="relative overflow-hidden h-48 bg-muted">
                           <img
