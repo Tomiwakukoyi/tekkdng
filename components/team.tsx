@@ -41,23 +41,34 @@ export default function Team() {
 
         <div className="grid md:grid-cols-2 gap-12">
           {teamData.members.map((member, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <div className="w-48 h-48 rounded-lg overflow-hidden mb-6 border-2 border-accent/30">
+            <div key={index} className="group relative flex justify-center">
+              <div className="w-[80%] h-80 rounded-lg overflow-hidden border-2 border-accent/30 relative">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-all duration-500 group-hover:blur-sm group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+                  <h3 className="text-2xl font-bold mb-2 text-white">
+                    {member.name}
+                  </h3>
+                  <p className="text-accent font-semibold mb-3">
+                    {member.role}
+                  </p>
+                  <p className="text-foreground/90 text-sm leading-relaxed">
+                    {member.bio}
+                  </p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-2 text-center">
-                {member.name}
-              </h3>
-              <p className="text-accent font-semibold mb-4 text-center">
-                {member.role}
-              </p>
-              <p className="text-foreground/70 text-center max-w-2xl">
-                {member.bio}
-              </p>
+              {/* Fixed blur background at bottom */}
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] p-4 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none">
+                <div className="backdrop-blur-md bg-background/30 rounded-lg p-3">
+                  <h3 className="text-lg font-bold mb-1 text-white">
+                    {member.name}
+                  </h3>
+                  <p className="text-accent font-medium">{member.role}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
