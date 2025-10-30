@@ -1,0 +1,18 @@
+{
+  "title": "Meet Our Team",
+  "subtitle": "Visionary leaders driving innovation",
+  "members": [
+    {
+      "name": "Mr. Kukoyi Tomiwa",
+      "role": "Founder & CTO",
+      "image": "/images/tk-headhsot.png",
+      "bio": "With over a decade of experience in software engineering and AI innovation, Kukoyi leads Tekkd Solutions with a vision to transform businesses through intelligent technology. His expertise spans machine learning, cloud architecture, and strategic technology consulting."
+    },
+    {
+      "name": "Mr. Kaiyewu Tomiwa",
+      "role": "Chief Operations Officer",
+      "image": "/images/tomiwa2.png",
+      "bio": "A strategic leader with extensive experience in operations management, Kaiyewu drives operational excellence and ensures seamless execution of projects across Tekkd Solutions. His expertise in process optimization and team management helps deliver exceptional results for our clients."
+    }
+  ]
+}
