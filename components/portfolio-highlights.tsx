@@ -18,7 +18,7 @@ export default function PortfolioHighlights() {
             Portfolio Highlights
           </h2>
           <p className="text-base sm:text-lg text-foreground/70 max-w-2xl mx-auto">
-            A snapshot of what we\'ve delivered across industries and platforms.
+            A snapshot of what we've delivered across industries and platforms.
           </p>
           <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1 text-sm text-accent">
             Achievements in the last year since we began operations
