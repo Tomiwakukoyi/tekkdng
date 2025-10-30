@@ -9,9 +9,9 @@ interface Counter {
 }
 
 const counters: Counter[] = [
-  { label: "Projects Completed", value: 150, suffix: "+" },
-  { label: "AI Models Deployed", value: 85, suffix: "+" },
-  { label: "Industries Served", value: 12, suffix: "+" },
+  { label: "Projects Completed", value: 11, suffix: "+" },
+  { label: "AI Models Deployed", value: 4, suffix: "+" },
+  { label: "Industries Served", value: 5, suffix: "+" },
   { label: "Client Satisfaction", value: 98, suffix: "%" },
 ];
 
