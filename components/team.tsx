@@ -17,6 +17,7 @@ interface TeamData {
 
 export default function Team() {
   const [teamData, setTeamData] = useState<TeamData | null>(null);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   useEffect(() => {
     fetch("/data/team.json")
@@ -40,37 +41,66 @@ export default function Team() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {teamData.members.map((member, index) => (
-            <div key={index} className="group relative flex justify-center">
-              <div className="w-[80%] h-80 rounded-lg overflow-hidden border-2 border-accent/30 relative">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-full object-cover transition-all duration-500 group-hover:blur-sm group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
-                  <h3 className="text-2xl font-bold mb-2 text-white">
-                    {member.name}
-                  </h3>
-                  <p className="text-accent font-semibold mb-3">
-                    {member.role}
-                  </p>
-                  <p className="text-foreground/90 text-sm leading-relaxed">
-                    {member.bio}
-                  </p>
+          {teamData.members.map((member, index) => {
+            const isExpanded = expandedIndex === index;
+            return (
+              <div key={index} className="group relative flex justify-center">
+                <div className="w-[80%] h-112 md:h-80 rounded-lg overflow-hidden border-2 border-accent/30 relative">
+                  {/* Mobile details toggle button */}
+                  <button
+                    type="button"
+                    aria-label={isExpanded ? "Hide details" : "Show details"}
+                    className="md:hidden absolute top-3 right-3 z-10 rounded-full bg-background/80 border border-accent/30 px-3 py-1 text-xs font-medium text-accent shadow hover:bg-background/90"
+                    onClick={() => setExpandedIndex(isExpanded ? null : index)}
+                  >
+                    {isExpanded ? "Close" : "Details"}
+                  </button>
+
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className={
+                      "w-full h-full object-cover transition-all duration-500 " +
+                      "group-hover:blur-sm group-hover:scale-105 " +
+                      (isExpanded ? "blur-sm scale-105" : "")
+                    }
+                  />
+                  <div
+                    className={
+                      "absolute inset-0 bg-linear-to-t from-background/95 via-background/80 to-transparent " +
+                      "opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-4 md:p-6 overflow-y-auto " +
+                      (isExpanded ? "opacity-100" : "")
+                    }
+                  >
+                    <h3 className="text-2xl font-bold mb-2 text-white">
+                      {member.name}
+                    </h3>
+                    <p className="text-accent font-semibold mb-3">
+                      {member.role}
+                    </p>
+                    <p className="text-foreground/90 text-sm leading-relaxed">
+                      {member.bio}
+                    </p>
+                  </div>
+                </div>
+                {/* Fixed blur background at bottom */}
+                <div
+                  className={
+                    "absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] p-4 transition-opacity duration-500 pointer-events-none " +
+                    "" +
+                    (isExpanded ? "opacity-0" : "group-hover:opacity-0")
+                  }
+                >
+                  <div className="backdrop-blur-md bg-background/30 rounded-lg p-3">
+                    <h3 className="text-lg font-bold mb-1 text-white">
+                      {member.name}
+                    </h3>
+                    <p className="text-accent font-medium">{member.role}</p>
+                  </div>
                 </div>
               </div>
-              {/* Fixed blur background at bottom */}
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] p-4 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none">
-                <div className="backdrop-blur-md bg-background/30 rounded-lg p-3">
-                  <h3 className="text-lg font-bold mb-1 text-white">
-                    {member.name}
-                  </h3>
-                  <p className="text-accent font-medium">{member.role}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
