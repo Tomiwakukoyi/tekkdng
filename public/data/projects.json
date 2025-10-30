@@ -1,0 +1,68 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "AI-Powered Analytics Platform",
+      "category": "AI Solutions",
+      "image": "/images/analytics-dashboard.png",
+      "technologies": ["TensorFlow", "React", "Node.js", "AWS"],
+      "description": "Real-time data analytics with predictive insights"
+    },
+    {
+      "id": 2,
+      "title": "Intelligent Chatbot System",
+      "category": "AI Solutions",
+      "image": "/images/chatbot-interface.png",
+      "technologies": ["OpenAI", "Next.js", "Python", "LangChain"],
+      "description": "Multi-language customer support automation"
+    },
+    {
+      "id": 3,
+      "title": "E-Commerce Platform",
+      "category": "Web Apps",
+      "image": "/images/ecommerce-store.png",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+      "description": "Full-stack shopping experience with AI recommendations"
+    },
+    {
+      "id": 4,
+      "title": "Mobile Fitness App",
+      "category": "Mobile Apps",
+      "image": "/images/fitness-app-interface.png",
+      "technologies": ["React Native", "Firebase", "TensorFlow Lite"],
+      "description": "AI-powered workout recommendations"
+    },
+    {
+      "id": 5,
+      "title": "Process Automation Suite",
+      "category": "Automation",
+      "image": "/images/workflow-automation.png",
+      "technologies": ["Python", "RPA", "AWS Lambda", "PostgreSQL"],
+      "description": "Enterprise workflow automation with ML"
+    },
+    {
+      "id": 6,
+      "title": "Computer Vision System",
+      "category": "AI Solutions",
+      "image": "/images/computer-vision-detection.jpg",
+      "technologies": ["PyTorch", "OpenCV", "FastAPI", "GCP"],
+      "description": "Image recognition and object detection"
+    },
+    {
+      "id": 7,
+      "title": "Healthcare Management System",
+      "category": "Web Apps",
+      "image": "/images/placeholder.svg",
+      "technologies": ["Vue.js", "Django", "PostgreSQL", "Docker"],
+      "description": "Comprehensive patient records and appointment scheduling platform"
+    },
+    {
+      "id": 8,
+      "title": "Smart Home Automation",
+      "category": "Automation",
+      "image": "/images/placeholder.svg",
+      "technologies": ["IoT", "MQTT", "Raspberry Pi", "MongoDB"],
+      "description": "Connected devices system for intelligent home management"
+    }
+  ]
+}
